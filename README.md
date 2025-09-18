@@ -1,1 +1,1 @@
-# Design-and-Analysis-of-Algorithms
+all assignments from Design and Analysis of Algorithms course 
