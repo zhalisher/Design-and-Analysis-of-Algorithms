@@ -55,14 +55,14 @@ public class DeterministicSelect {
         }
         swap(arr, pivotIndex, right);
 
-        int storeIndex = left;
+        int storeIndex = left; // for storing elements less than pivot
         for (int i = left; i < right; i++) {
-            if (arr[i] < pivot) {
+            if (arr[i] < pivot) { // if the element is smaller that pivot = > swap with storeIndex
                 swap(arr, storeIndex, i);
                 storeIndex++;
             }
         }
-        swap(arr, storeIndex, right);
+        swap(arr, storeIndex, right); 
         return storeIndex;
     }
     static void swap(int[] arr, int i, int j) {
