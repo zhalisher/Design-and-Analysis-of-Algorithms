@@ -8,26 +8,30 @@ Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
     This is the main purpose of the code. If and element more than the half times of the size of an array, it will become as an candidtae.
     
 2 Complexity analysis
-    Time complexity
-      | Case             | Description                                             | Time Complexity |
-      | Best Case        | The majority element dominates early, minimal switches  | Θ(n)            |
-      | Average Case     | Candidate resets occasionally, full pass still required | Θ(n)            |
-      | Worst Case       | Many different elements, candidate keeps changing       | Θ(n)            |
-    Dervation 
-      The first pass iterates once after over all n elements (O(n)) 
-      The second pass (its verification) irreates once more over all n elemenets (O(n))
-      Comvbined = 2n = Θ(n)
-        There are no nested loops or recursion, so the ressurance relation is 
-            T(n) = T(n-1) + O(1) = > T(n) = O(n)
-    Space compelxity
-      Used constant helper varivables like candidate and count 
-      No extra arrays are used
-      Space complexity O(1)
-    Summay
-      | Metric             | Complexity |
-      | Time (all cases)   | Θ(n)       |
-      | Space              | O(1)       |
-      | In-place           | Yes        |
+
+Time complexity
+  | Case             | Description                                             | Time Complexity |
+  | Best Case        | The majority element dominates early, minimal switches  | Θ(n)            |
+  | Average Case     | Candidate resets occasionally, full pass still required | Θ(n)            |
+  | Worst Case       | Many different elements, candidate keeps changing       | Θ(n)            |
+  
+Dervation 
+  The first pass iterates once after over all n elements (O(n)) 
+  The second pass (its verification) irreates once more over all n elemenets (O(n))
+  Comvbined = 2n = Θ(n)
+    There are no nested loops or recursion, so the ressurance relation is 
+        T(n) = T(n-1) + O(1) = > T(n) = O(n)
+        
+Space compelxity
+  Used constant helper varivables like candidate and count 
+  No extra arrays are used
+  Space complexity O(1)
+  
+Summay
+  | Metric             | Complexity |
+  | Time (all cases)   | Θ(n)       |
+  | Space              | O(1)       |
+  | In-place           | Yes        |
       
 3 Code Review & Optimization
     Identification of inefficient code sections 
@@ -64,6 +68,7 @@ Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
     Minor practical optimizations (skipping verification when safe) can improve real-world performance.
     Code readability and maintainability could be improved via documentation and separation of logic.
   
+
 
 
 
