@@ -1,10 +1,12 @@
 Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
+
 1 Algorithm overwiev 
     The main purpose of the Boyer–Moore Majority Vote Algorithm is to find the elements that appears more than half size of the array 
     It has two main phases : 
       1 . Cantditate selection phase - iterates through an array maintaining a candidate and a count . When the count drops to zero , the current element becomes the new candidate 
       2 . Verification phase - checks if the candidate actually appears more than half size of the array
     This is the main purpose of the code. If and element more than the half times of the size of an array, it will become as an candidtae.
+    
 2 Complexity analysis
     Time complexity
       | Case             | Description                                             | Time Complexity |
@@ -26,6 +28,7 @@ Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
       | Time (all cases)   | Θ(n)       |
       | Space              | O(1)       |
       | In-place           | Yes        |
+      
 3 Code Review & Optimization
     Identification of inefficient code sections 
         The verification phase always excecuted even if the candidate is dominant 
@@ -33,6 +36,7 @@ Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
         Adding input checks to handle empty arrays
     Proposed improvements for time/space complexity 
         Skip the verifiaction phase if the array is known to always have a majority element
+        
 4 Empirical Results 
     Benchmark setup
         Tested across multiple input sizes
@@ -53,9 +57,11 @@ Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
             | 1,000          | 111000s       |
             | 10,000         | 598800ns      |
             | 100,000        | 2111300ns     |
+            
   5 Conclucsion
     The Boyer–Moore algorithm is asymptotically optimal for majority voting problems.
     Theoretical and empirical results match perfectly — linear time, constant space.
     Minor practical optimizations (skipping verification when safe) can improve real-world performance.
     Code readability and maintainability could be improved via documentation and separation of logic.
   
+
