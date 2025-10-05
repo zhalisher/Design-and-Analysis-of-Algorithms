@@ -41,15 +41,15 @@ Summay
       
 3 Code Review & Optimization
 
-Identification of inefficient code sections 
+1Identification of inefficient code sections 
 
   The verification phase always excecuted even if the candidate is dominant 
-    
-Specific optimization suggestions with rationale 
+  
+2Specific optimization suggestions with rationale 
 
   Adding input checks to handle empty arrays
     
-Proposed improvements for time/space complexity 
+3Proposed improvements for time/space complexity 
 
   Skip the verifiaction phase if the array is known to always have a majority element
     
@@ -93,6 +93,7 @@ In code itself done with ns to check the accrutate time
   
   Code readability and maintainability could be improved via documentation and separation of logic.
   
+
 
 
 
