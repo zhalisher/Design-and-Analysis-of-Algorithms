@@ -1,10 +1,8 @@
 Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
 
 1 Algorithm overwiev 
-    -
     The main purpose of the Boyer–Moore Majority Vote Algorithm is to find the elements that appears more than half size of the array 
     It has two main phases : 
-    -
       1 . Cantditate selection phase - iterates through an array maintaining a candidate and a count . When the count drops to zero , the current element becomes the new candidate 
       2 . Verification phase - checks if the candidate actually appears more than half size of the array
     This is the main purpose of the code. If and element more than the half times of the size of an array, it will become as an candidtae.
@@ -66,5 +64,6 @@ Peer Analysis Report - Boyer–Moore Majority Vote Algorithm,
     Minor practical optimizations (skipping verification when safe) can improve real-world performance.
     Code readability and maintainability could be improved via documentation and separation of logic.
   
+
 
 
