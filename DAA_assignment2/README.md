@@ -42,13 +42,16 @@ Summay
 3 Code Review & Optimization
 
 Identification of inefficient code sections 
-    The verification phase always excecuted even if the candidate is dominant 
+
+  The verification phase always excecuted even if the candidate is dominant 
     
 Specific optimization suggestions with rationale 
-    Adding input checks to handle empty arrays
+
+  Adding input checks to handle empty arrays
     
 Proposed improvements for time/space complexity 
-    Skip the verifiaction phase if the array is known to always have a majority element
+
+  Skip the verifiaction phase if the array is known to always have a majority element
     
 4 Empirical Results 
 
@@ -68,8 +71,9 @@ Measured total excecution time in (in ms)
 In code itself done with ns to check the accrutate time 
 
   example :
-
+  
   !!!!!!!CHEKS THE TIME OF EXACLTY THIS ARRAY MAY SLIGTLY CHANGE IF OTHER ARRAY IS USED!!!!!!!!!!!!
+  
   Test array: 1 2 1 1 3 1 1 
   Expected: 1, Got: 1]
         
@@ -82,10 +86,14 @@ In code itself done with ns to check the accrutate time
   5 Conclucsion
 
   The Boyer–Moore algorithm is asymptotically optimal for majority voting problems.
+  
   Theoretical and empirical results match perfectly — linear time, constant space.
+  
   Minor practical optimizations (skipping verification when safe) can improve real-world performance.
+  
   Code readability and maintainability could be improved via documentation and separation of logic.
   
+
 
 
 
